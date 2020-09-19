@@ -8,9 +8,9 @@ googleAnalytics = "your_google_analytics_id"
 hasCJKLanguage = false
 
 [params]
-	author = "asegfault"
+	author = "Arın Mirza"
 	description = "segmentation fault but abstract"
-	bio = "core dumped"
+	bio = "I'll be writing stuff here eventually, I promise."
 
 	twitter = "your_twitter_id"
 	facebook = "your_facebook_id"
