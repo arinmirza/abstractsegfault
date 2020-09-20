@@ -1,4 +1,8 @@
 {
-  "name": "node-fetch",
-  "version": "2.6.1"
+  "name": "Abstract Segfault Static Web Site",
+  "description": "This is a sample description."
+  "version": "1.0.0",
+  "dependencies": {
+    "node-fetch": "2.6.1"
+  }
 }
