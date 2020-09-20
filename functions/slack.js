@@ -4,7 +4,8 @@ const getJSON = require('get-json');
 exports.handler = async (event, context) => {
 
   let content = "";
-  await getJSON('https://json.geoiplookup.io/').then(res => content = res);
+  await getJSON('https://json.geoiplookup.io/')
+    .then(res => content = JSON.stringify(res));
 
   return fetch(process.env.SLACK_WEBHOOK_URL, {
     headers: {
