@@ -1,9 +1,10 @@
 const fetch = require('node-fetch');
+const $ = require('jquery')
 
 exports.handler = async (event, context) => {
 
   let content = "";
-  $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+  $.getJSON('https://json.geoiplookup.io/', function(data) {
     content = JSON.stringify(data, null, 2);
   });
 
