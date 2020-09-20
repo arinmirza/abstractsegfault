@@ -2,14 +2,17 @@ const fetch = require('node-fetch');
 
 exports.handler = async (event, context) => {
 
-  // Send greeting to Slack
+  let content = "";
+  $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+    content = JSON.stringify(data, null, 2);
+  });
 
   return fetch(process.env.SLACK_WEBHOOK_URL, {
     headers: {
       "content-type": "application/json"
     },
     method: "POST",
-    body: JSON.stringify({ text: `Someone says hello!` })
+    body: JSON.stringify({ text: content })
   })
     .then(() => ({
       statusCode: 200,
