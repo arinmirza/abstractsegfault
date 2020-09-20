@@ -1,6 +1,6 @@
 {
-  "name": "Asegfault Website",
-  "version": "1.0.0",
+  "name": "node-fetch",
+  "version": "2.6.1",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
