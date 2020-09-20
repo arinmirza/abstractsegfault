@@ -2,7 +2,7 @@
   "name": "node-fetch",
   "version": "2.6.1",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
     "jquery": "^3.5.1"
   }
 }
