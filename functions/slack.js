@@ -5,7 +5,7 @@ exports.handler = async (event, context) => {
 
   let content = "";
   await getJSON('https://json.geoiplookup.io/').then(res => content = res);
-  
+
   return fetch(process.env.SLACK_WEBHOOK_URL, {
     headers: {
       "content-type": "application/json"
@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
   })
     .then(() => ({
       statusCode: 200,
-      body: `Hello there 👋!`
+      body: content
     }))
     .catch(error => ({
       statusCode: 422,
