@@ -1,8 +1,10 @@
-import fetch from "node-fetch";
+
 
 exports.handler = async (event, context) => {
 
   // Send greeting to Slack
+  import fetch from "node-fetch";
+
   return fetch(process.env.SLACK_WEBHOOK_URL, {
     headers: {
       "content-type": "application/json"
