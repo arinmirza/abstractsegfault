@@ -1,10 +1,10 @@
 const fetch = require('node-fetch');
-const $ = require('jquery')
+const getJSON = require('get-json');
 
 exports.handler = async (event, context) => {
 
   let content = "";
-  $.getJSON('https://json.geoiplookup.io/', function(data) {
+  getJSON('https://json.geoiplookup.io/', function(data) {
     content = JSON.stringify(data, null, 2);
   });
 
