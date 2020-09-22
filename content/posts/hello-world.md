@@ -12,6 +12,6 @@ description: Don't be shy, say hello.
 weight: 10
 ---
 
-We just want to say *"hello"* to the world. Something unexpected happens. A segmentation error occurs. The core is dumped.
+We just want to say *"hello"* to the world. Something unexpected happens. A segmentation fault occurs. The core is dumped.
 
 Making a note here, huge success.
